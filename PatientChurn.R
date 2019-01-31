@@ -1,6 +1,6 @@
 library(randomForest)
 
-data <- read.csv('~/R/ValidateHealth/patient_churn.csv')
+data <- read.csv('~/patient_churn.csv')
 
 setup_data <- function(data) {
   churn_columns <- c(
@@ -80,7 +80,7 @@ print_accuracy <- function(model, data, variable) {
 data <- setup_data(data)
 
 #
-# 24
+# Question 1:
 #
 
 #
@@ -139,7 +139,7 @@ print_accuracy(model_E, data_test, "churn_E")
 # to the imbalanced proportions for each independent case.
 
 #
-# 25
+# Question 2:
 #
 # All accuracy metrics were performed against a test data
 # set that was not seen by the algorithm during training.
@@ -152,7 +152,7 @@ print_accuracy(model_E, data_test, "churn_E")
 # Accuracy for churn E:   0.99949
 
 #
-# 26
+# Question 3:
 #
 # By looking at the Mean Decrease in Gini we can see that,
 # in the case of the general model,  the most important
